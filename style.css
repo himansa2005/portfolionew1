@@ -112,8 +112,8 @@
     padding: 20px;
     border-radius: 10px;
     text-align: center;
-    height: 400px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 400px;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -165,5 +165,49 @@
 
     .img1 {
         width: 90%;
+    }
+}
+
+.contact-section {
+    background-color: #f2f2f2;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.contact-section p {
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.contact-info {
+    text-align: left;
+    max-width: 300px;
+    color: #333;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-info {
+        text-align: center;
     }
 }
